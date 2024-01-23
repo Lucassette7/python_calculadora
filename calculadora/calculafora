@@ -1,0 +1,42 @@
+numero1 = int(input('numero:'))
+numero2 = int(input('numero:'))
+pergunta = input('o que desejas?')
+if pergunta == 'multiplicar':
+    multiplicar = numero1 * numero2
+    print(multiplicar)
+else:
+    if pergunta == 'somar' or 'soma' or '+':
+        somar = numero1 + numero2
+        print(somar)
+    else:
+        if pergunta == 'dividir' or 'divisão' or '/':
+            dividir = numero1 / numero2
+            print(dividir)
+        else:
+            if pergunta == 'subtrair' or 'subtração' or '-':
+                subtrair = numero1 - numero2
+                print(subtrair)
+
+pergunta2 = input('deseja realizar outro calculo?')
+while pergunta2 == 'sim':
+    numero1 = int(input('numero:'))
+    numero2 = int(input('numero:'))
+    pergunta = input('o que desejas?')
+    pergunta2 = input('deseja realizar outro calculo?')
+    if pergunta == 'multiplicar':
+        multiplicar = numero1 * numero2
+        print(multiplicar)
+    else:
+        if pergunta == 'somar' or 'soma' or '+':
+            somar = numero1 + numero2
+            print(somar)
+        else:
+            if pergunta == 'dividir' or 'divisão' or '/':
+                dividir = numero1 / numero2
+                print(dividir)
+            else:
+                if pergunta == 'subtrair' or 'subtração' or '-':
+                    subtrair = numero1 - numero2
+                    print(subtrair)
+if pergunta2 == 'nao':
+    breakpoint()
