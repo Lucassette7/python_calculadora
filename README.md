@@ -1,2 +1,2 @@
 # python_calculadora
- testes python
+ python
